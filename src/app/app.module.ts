@@ -8,7 +8,7 @@ import { LoginComponent } from './_pages/login/login.component';
 import { RegisterComponent } from './_pages/register/register.component';
 import { UserProfileComponent } from './_pages/user-profile/user-profile.component';
 import { PostsComponent } from './_pages/posts/posts.component';
-
+import { LoginFormComponent } from './_components/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +18,10 @@ import { PostsComponent } from './_pages/posts/posts.component';
     RegisterComponent,
     UserProfileComponent,
     PostsComponent,
-   
+    LoginFormComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
