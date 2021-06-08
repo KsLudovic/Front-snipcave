@@ -9,6 +9,7 @@ import { RegisterComponent } from './_pages/register/register.component';
 import { UserProfileComponent } from './_pages/user-profile/user-profile.component';
 import { PostsComponent } from './_pages/posts/posts.component';
 import { LoginFormComponent } from './_components/login-form/login-form.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { LoginFormComponent } from './_components/login-form/login-form.componen
     PostsComponent,
     LoginFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })
