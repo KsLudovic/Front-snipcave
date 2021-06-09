@@ -1,27 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { NgxWebstorageModule } from 'ngx-webstorage';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './_pages/home/home.component';
 import { LoginComponent } from './_pages/login/login.component';
-import { RegisterComponent } from './_pages/register/register.component';
-import { UserProfileComponent } from './_pages/user-profile/user-profile.component';
-import { PostsComponent } from './_pages/posts/posts.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginFormComponent } from './_components/login-form/login-form.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     LoginComponent,
-    RegisterComponent,
-    UserProfileComponent,
-    PostsComponent,
     LoginFormComponent,
-  ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  ],                    
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    NgxWebstorageModule.forRoot(),
+    ToastrModule.forRoot(),
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })
