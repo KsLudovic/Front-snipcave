@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+
+
 import { Router, ActivatedRoute } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { throwError } from 'rxjs';
@@ -15,7 +17,7 @@ export class LoginFormComponent implements OnInit {
 
   loginForm: FormGroup;
   loginRequestPayload: LoginRequestPayload;
-  registerSuccessMessage: string;
+  registerSuccessMessage: string = '';
   isError: boolean;
 
   constructor(private authService: AuthService, private activatedRoute: ActivatedRoute,
@@ -43,11 +45,12 @@ export class LoginFormComponent implements OnInit {
   }
 
   login() {
-    this.loginRequestPayload.username = this.loginForm.get('username')!.value;
-    this.loginRequestPayload.password = this.loginForm.get('password')!.value;
-
+    this.loginRequestPayload.username = this.loginForm.get('username').value;
+    this.loginRequestPayload.password = this.loginForm.get('password').value;
+    
     this.authService.login(this.loginRequestPayload).subscribe(data => {
       this.isError = false;
+      console.log("login ok");
       this.router.navigateByUrl('');
       this.toastr.success('Login Successful');
     }, error => {
@@ -55,4 +58,5 @@ export class LoginFormComponent implements OnInit {
       throwError(error);
     });
   }
+
 }
