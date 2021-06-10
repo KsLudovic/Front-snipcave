@@ -4,7 +4,7 @@ html{
     height: 100%;  
   }
   body{
-    margin-top: 63px;
+    margin-top: 0;
     height: 100%; 
   }
   
@@ -12,25 +12,3 @@ html{
     border: 1px solid red;
   }
   
-  .login,
-  .sign-up {
-    background-color: orange;
-    border-color: orange;
-    color: aliceblue;
-    fill: orange;
-    border: 1px solid;
-    border-radius: 4px;
-    text-align: center;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .5px;
-    line-height: 24px;
-    text-transform: uppercase;
-    padding: 3px 16px;
-    opacity: 1;
-  }
-  .sign-up:hover{
-    opacity: 0.6;
-  }

@@ -35,7 +35,7 @@
                             {{username}}
                         </button>
                     </div>            
-                    <div *ngIf="!isLoggedIn">
+                    <div *ngIf="!isLoggedIn" class="buttonConnection">
                         <a routerLink="/signup" class="float-right sign-up mr-2">Sign up</a>
                         <a routerLink="/login" class="float-right login mr-2">Login</a>
                     </div>
@@ -59,25 +59,5 @@
       $("#mainListDiv").toggleClass("show_list");
       $("#mainListDiv").fadeIn();
     });
-</script>
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-<script>
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-            console.log("OK");
-        } else {
-            $('.nav').removeClass('affix');
-        }
-    });
-</script>
-<script>
-$('.navTrigger').click(function () {
-    $(this).toggleClass('active');
-    console.log("Clicked menu");
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
-
-});
 </script>
 </nav>
