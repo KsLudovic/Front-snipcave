@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +16,7 @@ import { SignupFormComponent } from './_components/signup-form/signup-form.compo
 import { HomeComponent } from './_pages/home/home.component';
 import { NavbarComponent } from './_components/navbar/navbar.component';
 import { HeaderComponent } from './_components/header/header.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
