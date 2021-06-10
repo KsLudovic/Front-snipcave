@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/_services/auth.service';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { ObjectFlags } from 'typescript';
 
 @Component({
   selector: 'app-navbar',
@@ -32,4 +33,5 @@ export class NavbarComponent implements OnInit {
     this.isLoggedIn = false;
     this.router.navigateByUrl('');
   }
+
 }

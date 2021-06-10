@@ -128,10 +128,11 @@ body {
     text-decoration: none;
     margin-left: 0px;
     margin-top:6px;
+    fill: #ffffff;
 }
 
 .logo:hover {
-    color: #bb2c3f;
+    fill: #bb2c3f;
 }
 
 .login, .sign-up{    
