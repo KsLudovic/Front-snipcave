@@ -17,6 +17,13 @@ import { HomeComponent } from './_pages/home/home.component';
 import { NavbarComponent } from './_components/navbar/navbar.component';
 import { HeaderComponent } from './_components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PostsComponent } from './_pages/posts/posts.component';
+import { CharterComponent } from './_pages/charter/charter.component';
+import { ContactComponent } from './_pages/contact/contact.component';
+import { PostCardComponent } from './_components/post-card/post-card.component';
+import { CharterSectionComponent } from './_components/charter-section/charter-section.component';
+import { ContactFormComponent } from './_components/contact-form/contact-form.component';
+
 
 
 @NgModule({
@@ -29,6 +36,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     NavbarComponent,
     HeaderComponent,
+    PostsComponent,
+    CharterComponent,
+    ContactComponent,
+    ContactFormComponent,
+    PostCardComponent,
+    CharterSectionComponent,
   ],                    
   imports: [
     BrowserModule,
