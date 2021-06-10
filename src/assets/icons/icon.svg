@@ -1,8 +1,8 @@
-<nav class="nav">
-    <div class="container">
-        <a aria-label="Home" class="logo" routerLink="/" onmouseover="">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="50.000000pt" height="50.000000pt" viewBox="0 0 1280.000000 1085.000000"
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1280.000000pt" height="1085.000000pt" viewBox="0 0 1280.000000 1085.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.15, written by Peter Selinger 2001-2017
@@ -136,49 +136,3 @@ l158 -206 -63 -7 c-58 -7 -99 -17 -354 -84 -54 -14 -138 -28 -188 -31 l-90 -6
 130 190 336 175 417 -15 77 -121 115 -181 64z"/>
 </g>
 </svg>
-
-
-        </a>
-        <div id="mainListDiv" class="main_list">
-            <!-- changes needed to routerlink -->
-            <ul class="navlinks">
-                <li><a href="/charter">Charter</a></li>
-                <li><a href="/posts">Posts</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <div class="flex-grow-1 float-right">
-                    <div *ngIf="isLoggedIn" ngbDropdown class="float-right">
-                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                            <button (click)="goToUserProfile()" ngbDropdownItem>Profile</button>
-                            <button (click)="logout()" ngbDropdownItem>Logout</button>
-                        </div>
-                        <button class="userdetails" id="dropdownBasic1" ngbDropdownToggle>
-                            <img class="account-icon" src="https://image.flaticon.com/icons/png/128/2210/2210034.png">
-                            {{username}}
-                        </button>
-                    </div>            
-                    <div *ngIf="!isLoggedIn" class="buttonConnection">
-                        <a routerLink="/signup" class="float-right sign-up mr-2">Sign up</a>
-                        <a routerLink="/login" class="float-right login mr-2">Login</a>
-                    </div>
-                </div>
-            </ul>
-        </div>
-        <span class="navTrigger">
-            <i></i>
-            <i></i>
-            <i></i>
-        </span>
-    </div>
-<!-- Jquery needed -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
-
-<script>
-    $('.navTrigger').click(function () {
-      $(this).toggleClass('active');
-      console.log("Clicked menu");
-      $("#mainListDiv").toggleClass("show_list");
-      $("#mainListDiv").fadeIn();
-    });
-</script>
-</nav>

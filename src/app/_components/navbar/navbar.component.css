@@ -71,7 +71,7 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-    color: #00E676;
+    color: #bb2c3f;
 }
 
 
@@ -127,13 +127,19 @@ body {
     float: left;
     text-decoration: none;
     margin-left: 0px;
+    margin-top:6px;
 }
+
+.logo:hover {
+    color: #bb2c3f;
+}
+
 .login, .sign-up{    
     float:right;
     background-color: transparent;
-    border-color: orange;
-    color: orange;
-    fill: orange;
+    border-color: #DE354C;
+    color: #DE354C;
+    fill: #DE354C;
     border: 1px solid;
     border-radius: 4px;
     box-sizing: border-box;
@@ -150,8 +156,8 @@ body {
     opacity: 1; 
 }
 .sign-up{
-    background-color: orange;
-    border-color: orange;
+    background-color: #DE354C;
+    border-color: #DE354C;
     color: aliceblue;
 }
 .sign-up:hover{
