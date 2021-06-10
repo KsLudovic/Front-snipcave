@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +15,8 @@ import { TokenInterceptor } from './token-interceptor';
 import { SignupComponent } from './_pages/signup/signup.component';
 import { SignupFormComponent } from './_components/signup-form/signup-form.component';
 import { HomeComponent } from './_pages/home/home.component';
+import { NavbarComponent } from './_components/navbar/navbar.component';
+import { HeaderComponent } from './_components/header/header.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { HomeComponent } from './_pages/home/home.component';
     SignupComponent,
     SignupFormComponent,
     HomeComponent,
+    NavbarComponent,
+    HeaderComponent,
   ],                    
   imports: [
     BrowserModule,
@@ -36,7 +40,7 @@ import { HomeComponent } from './_pages/home/home.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-
+    FontAwesomeModule
     ],
   providers: [
     {
