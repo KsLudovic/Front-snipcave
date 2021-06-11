@@ -23,6 +23,8 @@ import { ContactComponent } from './_pages/contact/contact.component';
 import { PostCardComponent } from './_components/post-card/post-card.component';
 import { CharterSectionComponent } from './_components/charter-section/charter-section.component';
 import { ContactFormComponent } from './_components/contact-form/contact-form.component';
+import { UserProfilComponent } from './_pages/user-profil/user-profil.component';
+import { UserDetailsFormComponent } from './_components/user-details-form/user-details-form.component';
 
 
 
@@ -42,6 +44,8 @@ import { ContactFormComponent } from './_components/contact-form/contact-form.co
     ContactFormComponent,
     PostCardComponent,
     CharterSectionComponent,
+    UserProfilComponent,
+    UserDetailsFormComponent,
   ],                    
   imports: [
     BrowserModule,

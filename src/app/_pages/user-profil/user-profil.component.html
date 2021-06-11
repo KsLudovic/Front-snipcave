@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="row">
+        <img
+          class="account-icon"
+          src="https://image.flaticon.com/icons/png/128/2210/2210034.png"
+        />
+        <!--{{username}}-->
+        <a routerLink="/setting">Settings</a>
+      </div>
+      <div class="row">
+        <p>Here you gonna know more about me</p>
+      </div>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="progress">
+          <h3>Level</h3>
+          <div
+            class="progress-bar"
+            role="progressbar"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <div>
+          <h5>Dernière partie:</h5>
+          <p>Game: XXX</p>
+          <p>date: XXX:XX</p>
+          <p>Xp: XXX</p>
+          <p>Rank : XX</p>
+          <a href="">See all the classification</a>
+        </div>
+      </div>
+      <div class="row">
+        <!--*ngFor pour afficher tous les post de la liste qu'on a récup dans le ts-->
+        Here you'll see my post
+        <app-post-card></app-post-card>
+      </div>
+    </div>
+  </div>
+</div>

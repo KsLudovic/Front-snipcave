@@ -142,9 +142,9 @@ l158 -206 -63 -7 c-58 -7 -99 -17 -354 -84 -54 -14 -138 -28 -188 -31 l-90 -6
         <div id="mainListDiv" class="main_list">
             <!-- changes needed to routerlink -->
             <ul class="navlinks">
-                <li><a href="/charter">Charter</a></li>
-                <li><a href="/posts">Posts</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a routerLink="charter">Charter</a></li>
+                <li><a routerLink="posts">Posts</a></li>
+                <li><a routerLink="contact">Contact</a></li>
                 <div class="flex-grow-1 float-right">
                     <div *ngIf="isLoggedIn" ngbDropdown class="float-right">
                         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
@@ -157,8 +157,8 @@ l158 -206 -63 -7 c-58 -7 -99 -17 -354 -84 -54 -14 -138 -28 -188 -31 l-90 -6
                         </button>
                     </div>            
                     <div *ngIf="!isLoggedIn" class="buttonConnection">
-                        <a routerLink="/signup" class="float-right sign-up mr-2">Sign up</a>
-                        <a routerLink="/login" class="float-right login mr-2">Login</a>
+                        <a routerLink="signup" class="float-right sign-up mr-2">Sign up</a>
+                        <a routerLink="login" class="float-right login mr-2">Login</a>
                     </div>
                 </div>
             </ul>
