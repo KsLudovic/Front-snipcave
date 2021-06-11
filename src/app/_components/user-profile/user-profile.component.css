@@ -1,3 +1,11 @@
 .container {
     margin:200px;
 }
+
+.presentation,.historical {
+    margin-top:25px;
+}
+
+#presentation{
+    border: solid 1px;
+}
