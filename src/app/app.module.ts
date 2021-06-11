@@ -23,8 +23,14 @@ import { ContactComponent } from './_pages/contact/contact.component';
 import { PostCardComponent } from './_components/post-card/post-card.component';
 import { CharterSectionComponent } from './_components/charter-section/charter-section.component';
 import { ContactFormComponent } from './_components/contact-form/contact-form.component';
+
 import { UserProfilComponent } from './_pages/user-profil/user-profil.component';
 import { UserDetailsFormComponent } from './_components/user-details-form/user-details-form.component';
+
+import { CarouselComponent } from './_components/carousel/carousel.component';
+import { HomeBodyComponent } from './_components/home-body/home-body.component';
+import { UserProfileComponent } from './_components/user-profile/user-profile.component';
+
 
 
 
@@ -44,8 +50,14 @@ import { UserDetailsFormComponent } from './_components/user-details-form/user-d
     ContactFormComponent,
     PostCardComponent,
     CharterSectionComponent,
+
     UserProfilComponent,
     UserDetailsFormComponent,
+
+    CarouselComponent,
+    HomeBodyComponent,
+    UserProfileComponent,
+
   ],                    
   imports: [
     BrowserModule,
